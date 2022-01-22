@@ -2,19 +2,22 @@
 
 "manifest_version": 2,
 "name": "Background-Change",
-"description": "Add a custom backgrounf to Google.com",
+"description": "Add a custom background to Google.com",
 "version": "1.0.0",
 "icons":{
-    "16": "",
-    "48": "",
-    "128": ""
+    "16": "/icons/icon16.png",
+    "48": "/icons/icon48.png",
+    "128": "/icons/icon128.png"
 },
 "page_action":{
     "default_icon":{
-        "16": "",
-        "48": "",
-        "128": ""
+        "16": "/icons/icon16.png",
+        "48": "/icons/icon48.png",
+        "128": "/icons/icon128.png"
     }
-}
-
+},
+"content_scripts": [{
+    "matches": ["https://www.google.com/*"],
+    "css": ["main.css"]
+}]
 }
