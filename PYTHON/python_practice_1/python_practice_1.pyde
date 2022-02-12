@@ -3,8 +3,8 @@ def setup():
     smooth()
 
 def draw():
-    background(0)
-    stroke(255)
+    background(255)
+    stroke(0)
     noFill()
     constantFactor = 1.3
     circleSize = 25
